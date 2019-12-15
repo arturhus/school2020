@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 
     try {
         let team = teams.find(element => element.members.includes(memberLastName));
-        res.send('Congratulations! You have successfully completed the first task. \n\n' +
+        res.send('\nCongratulations! You have successfully completed the first task. \n\n' +
             'You are in the "' + team.teamName + '" team. Go ahead and find your teammate. \n\n' +
             'Good luck!');
     } catch (e) {
