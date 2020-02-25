@@ -2,12 +2,14 @@ var express = require('express');
 var router = express.Router();
 
 var teams = [];
-teams.push({teamName:'Black', members:'khusnullin-chuiko'});
-teams.push({teamName:'Red', members:'snow-shevchuk'});
-teams.push({teamName:'White', members:'dovhan-skurchak'});
+teams.push({teamName:'Black', members:'tryndey-labaz'});
+teams.push({teamName:'Green', members:'horoshko-dovganuk'});
+teams.push({teamName:'Red', members:'susiak-pavliuk'});
+teams.push({teamName:'White', members:'zubenko-simkiv'});
+teams.push({teamName:'Yellow', members:'yaremenko-palys-shyshkin'});
 
 router.get('/', function(req, res, next) {
-    let memberLastName = req.headers['lastname'];
+    let memberLastName = req.headers['lastname'].toLowerCase();
     if(!memberLastName) res.send('Incorrect header. Please try again.');
 
     try {
