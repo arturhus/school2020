@@ -9,10 +9,11 @@ teams.push({teamName:'White', members:'zubenko-simkiv'});
 teams.push({teamName:'Yellow', members:'yaremenko-palys'});
 
 router.get('/', function(req, res, next) {
-    let memberLastName = req.headers['lastname'].toLowerCase();
+    let memberLastName = req.headers['lastname'];
     if(!memberLastName) res.send('Incorrect header. Please try again.');
 
     try {
+        memberLastName = memberLastName.toLowerCase();
         let team = teams.find(element => element.members.includes(memberLastName));
         res.send('\n\nCongratulations! You have successfully completed the first task. \n\n' +
             'You are in the "' + team.teamName + '" team. Go ahead and find your teammate. \n\n' +
