@@ -2,9 +2,9 @@ var express = require('express');
 var router = express.Router();
 
 var teams = [];
-teams.push({teamName:'Black', members:'tryndey-labaz'});
+teams.push({teamName:'Black', members:'tryndey-labaz-shyshkin'});
 teams.push({teamName:'Green', members:'horoshko-dovganuk'});
-teams.push({teamName:'Red', members:'susiak-pavliuk-shyshkin'});
+teams.push({teamName:'Red', members:'susiak-pavliuk'});
 teams.push({teamName:'White', members:'zubenko-simkiv'});
 teams.push({teamName:'Yellow', members:'yaremenko-palys'});
 
