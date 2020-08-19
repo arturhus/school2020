@@ -2,11 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 var teams = [];
-teams.push({teamName:'Black', members:'tryndey-labaz-shyshkin'});
-teams.push({teamName:'Green', members:'horoshko-dovganuk'});
-teams.push({teamName:'Red', members:'susiak-pavliuk'});
-teams.push({teamName:'White', members:'zubenko-simkiv'});
-teams.push({teamName:'Yellow', members:'yaremenko-palys'});
+teams.push({teamName:'Black', members:'tymchenko-rosovskyi'});
+teams.push({teamName:'White', members:'kholod-boiko'});
 
 router.get('/', function(req, res, next) {
     let memberLastName = req.headers['lastname'];
